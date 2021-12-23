@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>CSS burger menu</title>
+</head>
+<body>
+<div class ="menu-wrap">
+    <input type = "checkbox" class="toggler">
+    <div class = "hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a><br>
+                        <a href="about.html">About</a><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class = "showcase">
+    <div class = "container showcase-inner">
+
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <input
+                            type="radio"
+                            id="slide-1"
+                            class="checkbox"
+                            name="slider"
+                            checked
+                    />
+                    <div class="slide">
+                        <div class="content">Slide 1</div>
+                    </div>
+
+                    <input type="radio" id="slide-2" class="checkbox" name="slider" />
+                    <div class="slide">
+                        <div class="content">Slide 2</div>
+                    </div>
+
+                    <input type="radio" id="slide-3" class="checkbox" name="slider" />
+                    <div class="slide">
+                        <div class="content">Slide 3</div>
+                    </div>
+                </div>
+
+                <nav>
+                    <label for="slide-1">1</label>
+                    <label for="slide-2">2</label>
+                    <label for="slide-3">3</label>
+                </nav>
+            </div>
+
+    </div>
+</header>
+</body>
+</html>
