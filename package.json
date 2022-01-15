@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "eslint": "eslint .",
+    "eslint": "eslint",
     "format": "prettier --check .",
     "stylelint": "stylelint **/*.css",
     "eslint:fix": "eslint . --fix",
