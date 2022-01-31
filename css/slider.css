@@ -1,0 +1,59 @@
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slider nav label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 2px;
+  color: var(--primary-color);
+  background-color: var(--overay-color);
+  border: 1px solid var(--overay-color);
+  transition: var(--menu-speed);
+}
+
+.slider .slides {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.slider .slides .slide {
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  background-color: var(--lightblue);
+  display: none;
+}
+
+.slider .slides .slide .content {
+  margin: auto;
+  color: var(--overay-color);
+}
+
+.slider .slides .checkbox {
+  display: none;
+}
+
+.slider .slides .checkbox:checked + .slide {
+  display: flex;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "labweb4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "eslint": "eslint",
+    "format": "prettier --check .",
+    "stylelint": "stylelint **/*.css",
+    "eslint:fix": "eslint . --fix",
+    "format:fix": "prettier --write .",
+    "stylelint:fix": "stylelint **/*.css --fix",
+    "pre-commit": "npm run eslint && npm run stylelint && npm run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriiPolishko/lab4-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriiPolishko/lab4-web/issues"
+  },
+  "homepage": "https://github.com/AndriiPolishko/lab4-web#readme",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "husky": "^7.0.4",
+    "prettier": "2.5.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
